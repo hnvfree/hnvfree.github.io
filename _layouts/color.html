@@ -1,21 +1,9 @@
----
-layout: page
-title: color
-subtitle: Browse this website by tag.
----
-
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf=8">
-        <style type="text/css">
-            #posts {
-                width: 90%;
-                height: 700px;
-                margin: auto
-            }
-        </style>
-    </head>
+<html>
+
+  {% include head.html %}
+
+
     <body onload="return PaltalHeaderBGColor()">
         <div id="posts">hi
         </div>
@@ -58,8 +46,10 @@ subtitle: Browse this website by tag.
 			    var d = new Date();
 			    var n = d.getHours() //d.getDate()
                 color += letters[n-1];
-                document.getElementById('header-main').style.background = color; // Setting the random color on your div element.
+                document.getElementById('posts').style.background = color; // Setting the random color on your div element.
             }
         </script>
-    </body>
-</html>
+
+      </body>
+
+    </html>
